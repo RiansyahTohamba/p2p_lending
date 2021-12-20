@@ -1,5 +1,5 @@
 # modul_lain
-class ClassName(object):
+class ClassName:
 	"""docstring for ClassName"""
 	def __init__(self):
 		pass	

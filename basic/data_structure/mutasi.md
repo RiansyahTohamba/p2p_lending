@@ -55,7 +55,8 @@ However, tuples are immutable; you cannot add, delete, or change items after a t
 Tuples differ from lists by having many fewer functions because they can’t be modified after being defined. Tuples contain zero or more elements and can contain elements of different, immutable types.
 
 
-Advantages to tuples over lists:
+# Advantages to tuples over lists:
+
 Tuples use less space
 Immutability prevents changing tuple items by mistake
 Tuples can be used as dictionary keys
@@ -64,7 +65,8 @@ Create tuples using () or a comma-separated list of elements with no surrounding
 Some notable methods & tips
 count() returns the number of times an element is found in the tuple
 index() returns the index position of an element
-Dictionaries
+
+# Dictionaries
 Instead of using an offset, dictionaries use keys to associate with each value. This means that order is not tracked and should not matter if you plan to use a dictionary. Dictionary keys are immutable and unique, however, dictionaries are mutable; the key-value elements can be added, deleted, or changed. In short, dictionaries are very similar to hashmaps.
 Create dictionaries using {}. Typecast using dict().
 Some notable methods & tips
@@ -74,9 +76,10 @@ update() merges the keys and values of one dictionary into another.
 del deletes an item by the provided key. del is a Python statement, not a dictionary method.
 keys() returns all the dictionary keys. values() returns all the values in the dictionary. items() returns all the dictionary key-value pairs.
 
-Sets
+# Sets
 A set is like a dictionary with only the keys, not the values. This means that sets are unique and not sequential (stored unordered). Sets are also mutable. Sets contain zero or more elements and can contain elements of different, immutable types.
 Essentially, sets are used when you want to know if something exists and nothing else about it. If it matters to track value order or store multiple of the same value, consider using a space-friendly tuple instead.
+
 Create sets using set(). Typecast using set().
 Some notable methods & tips
 add() adds an item to the set if it doesn’t already exist

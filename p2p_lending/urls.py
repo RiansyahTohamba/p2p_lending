@@ -14,8 +14,26 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+# from core.viewset_api import *
+# darimana viewset_api ?
+from rest_framework import routers
+from django.http import HttpResponse
+
+router = routers.DefaultRouter()
+router.register = ('borrower_api/', )
+
+# pelajari https://docs.djangoproject.com/en/3.2/ref/request-response/
+# jika ingin mengetahui kenapa ada argumen itu?
+
+def borrower(request):
+    return HttpResponse("halo dunia")
+
+def credit(request):
+    return HttpResponse("bayarmu kreditmu")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('borrower/', borrower),
+    path('credit/', credit)
 ]

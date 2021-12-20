@@ -1,0 +1,7 @@
+from core.models import Borrower
+from core.serializers import BorrowerSerializers
+from rest_framework import viewsets
+
+class x(viewsets.ModelViewSet):
+	# queryset = 
+
