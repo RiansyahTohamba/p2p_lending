@@ -18,19 +18,10 @@ from django.urls import path, include
 # from core.viewset_api import *
 # darimana viewset_api ?
 from rest_framework import routers
-from django.http import HttpResponse
+from core.views import *
 
 router = routers.DefaultRouter()
 router.register = ('borrower_api/', )
-
-# pelajari https://docs.djangoproject.com/en/3.2/ref/request-response/
-# jika ingin mengetahui kenapa ada argumen itu?
-
-def borrower(request):
-    return HttpResponse("halo dunia")
-
-def credit(request):
-    return HttpResponse("bayarmu kreditmu")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
